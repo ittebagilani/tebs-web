@@ -78,6 +78,7 @@ export function ContactForm() {
               type="text"
               value={form.name}
               onChange={handleChange}
+              required
             />
           </LabelInputContainer>
         </div>
@@ -90,6 +91,7 @@ export function ContactForm() {
             type="email"
             value={form.email}
             onChange={handleChange}
+            required
           />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
@@ -101,6 +103,7 @@ export function ContactForm() {
             type="text"
             value={form.message}
             onChange={handleChange}
+            required
           />
         </LabelInputContainer>
 
