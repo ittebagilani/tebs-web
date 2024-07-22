@@ -27,7 +27,7 @@ export default function About() {
             <Highlight className="text-black dark:text-white">
               Itteba Gilani.
             </Highlight>{" "}
-            I am a web developer based in Canada.
+            A web developer and designer based in Canada.
             
           </motion.h1>
         </HeroHighlight>
