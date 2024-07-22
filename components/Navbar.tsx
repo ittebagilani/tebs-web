@@ -31,7 +31,7 @@ export default function Navbar() {
       transition={{ duration: 0.2 }}
       className="fixed top-10 inset-x-0 max-w-2xl mx-auto z-[5000] px-4 md:px-0"
     >
-      <nav className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-20 px-8 py-6 text-md shadow-2xl">
+      <nav className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-12 md:space-x-20 px-8 py-6 text-md shadow-2xl">
         <Link href="/" className="text-white flex gap-x-2">
           works.
         </Link>
