@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <div className="text-center justify-center">
       <section className="bg-black h-fit">
-        <AuroraBackground children={""} />
+        <AuroraBackground />
       </section>
 
       <section>
         <div className="p-12 w-full bg-black">
-          {/* <LampDemo /> */}
+          
           <Grid />
         </div>
       </section>

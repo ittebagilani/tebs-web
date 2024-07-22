@@ -3,26 +3,20 @@ import { cn } from "@/lib/utils";
 import React, { ReactNode } from "react";
 import { SparklesCore } from "./sparkles";
 
-interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
-  children: ReactNode;
-  showRadialGradient?: boolean;
-}
+// interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
+//   children: ReactNode;
+//   showRadialGradient?: boolean;
+// }
 
-export const AuroraBackground = ({
-  className,
-  children,
-  showRadialGradient = false,
-  ...props
-}: AuroraBackgroundProps) => {
+export const AuroraBackground = () => {
+  //   className,
+  //   children,
+  //   showRadialGradient = false,
+  //   ...props
+  // }: AuroraBackgroundProps) => {
   return (
     <main>
-      <div
-        className={cn(
-          "relative flex flex-col  h-[100vh] items-center justify-center bg-zinc-50 dark:bg-zinc-900  text-slate-950 transition-bg",
-          className
-        )}
-        {...props}
-      >
+      <div className="relative flex flex-col  h-[100vh] items-center justify-center bg-zinc-50 dark:bg-zinc-900  text-slate-950 transition-bg">
         <div className="absolute inset-0 overflow-hidden">
           <div
             //   I'm sorry but this is what peak developer performance looks like // trigger warning
@@ -41,14 +35,16 @@ export const AuroraBackground = ({
             after:[background-size:200%,_100%] 
             after:animate-aurora after:[background-attachment:fixed] after:mix-blend-difference
             pointer-events-none
-            absolute -inset-[10px] opacity-50 will-change-transform`,
+            absolute -inset-[10px] opacity-50 will-change-transform`
 
-              showRadialGradient &&
-                `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`
+              // showRadialGradient &&
+              //   `[mask-image:radial-gradient(ellipse_at_100%_0%,black_10%,var(--transparent)_70%)]`
             )}
           ></div>
         </div>
-        <h1 className="text-center font-black text-white z-[100] p-0 m-0 text-9xl">teb's web.</h1>
+        <h1 className="text-center font-black text-white z-[100] p-0 m-0 text-9xl">
+          teb&apos;s web.
+        </h1>
         {/* <SparklesCore
           background="transparent"
           minSize={0.4}
@@ -57,7 +53,7 @@ export const AuroraBackground = ({
           className="w-full h-full"
           particleColor="#FFFFFF"
         /> */}
-        {children}
+        {/* {children} */}
       </div>
     </main>
   );
