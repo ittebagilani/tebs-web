@@ -44,7 +44,7 @@ const Grid = () => {
 
 const GridItem = ({ item }: { item: any }) => {
   return (
-    <Link href={item.link}>
+    <Link href={item.link} rel="noopener noreferrer" target="_blank">
       <div className="relative block w-full h-96 cursor-pointer overflow-hidden rounded-lg">
         <div className="absolute inset-0 overflow-hidden">
           <DirectionAwareHover imageUrl={item.src}>
