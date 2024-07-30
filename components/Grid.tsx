@@ -6,16 +6,16 @@ import { DirectionAwareHover } from "./ui/direction-aware-hover";
 
 const gridItems = [
   {
-    src: "/teb.png",
-    link: "/link2",
-    title: "iPhone 15 Pro",
-    date: "View in your space",
+    src: "/ig.png", // Replace with your actual image paths
+    link: "https://ittebagilani.live/",
+    title: "Itteba Gilani",
+    date: "2023",
   },
   {
-    src: "/cube.png", // Replace with your actual image paths
-    link: "/link1",
-    title: "Make filters on TikTok Effect House",
-    date: "Professional 2020-2021",
+    src: "/aye-ai.png",
+    link: "https://aye-ai.vercel.app/",
+    title: "Aye AI",
+    date: "2024",
   },
   {
     src: "/meds.png",
